@@ -7,19 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		072B69ED2923F5F600C5CF39 /* ColorizedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072B69EC2923F5F600C5CF39 /* ColorizedViewController.swift */; };
 		0741819E290BAF6C00854323 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0741819D290BAF6C00854323 /* AppDelegate.swift */; };
 		074181A0290BAF6C00854323 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0741819F290BAF6C00854323 /* SceneDelegate.swift */; };
-		074181A2290BAF6C00854323 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074181A1290BAF6C00854323 /* ViewController.swift */; };
+		074181A2290BAF6C00854323 /* ChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074181A1290BAF6C00854323 /* ChangeViewController.swift */; };
 		074181A5290BAF6C00854323 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 074181A3290BAF6C00854323 /* Main.storyboard */; };
 		074181A7290BAF6C00854323 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 074181A6290BAF6C00854323 /* Assets.xcassets */; };
 		074181AA290BAF6C00854323 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 074181A8290BAF6C00854323 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0741819A290BAF6C00854323 /* ColorizedView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorizedView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		072B69EC2923F5F600C5CF39 /* ColorizedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorizedViewController.swift; sourceTree = "<group>"; };
+		0741819A290BAF6C00854323 /* ColorizedViewUpgrade.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorizedViewUpgrade.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0741819D290BAF6C00854323 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0741819F290BAF6C00854323 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		074181A1290BAF6C00854323 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		074181A1290BAF6C00854323 /* ChangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeViewController.swift; sourceTree = "<group>"; };
 		074181A4290BAF6C00854323 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		074181A6290BAF6C00854323 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		074181A9290BAF6C00854323 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,10 +39,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		072B69E82923F46B00C5CF39 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				074181A1290BAF6C00854323 /* ChangeViewController.swift */,
+				072B69EC2923F5F600C5CF39 /* ColorizedViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		072B69E92923F48B00C5CF39 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				074181A3290BAF6C00854323 /* Main.storyboard */,
+				074181A8290BAF6C00854323 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		072B69EA2923F49900C5CF39 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				074181A6290BAF6C00854323 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		072B69EB2923F4AA00C5CF39 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				0741819D290BAF6C00854323 /* AppDelegate.swift */,
+				0741819F290BAF6C00854323 /* SceneDelegate.swift */,
+				074181AB290BAF6C00854323 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		07418191290BAF6C00854323 = {
 			isa = PBXGroup;
 			children = (
-				0741819C290BAF6C00854323 /* ColorizedView */,
+				0741819C290BAF6C00854323 /* ColorizedViewUpgrade */,
 				0741819B290BAF6C00854323 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,31 +86,28 @@
 		0741819B290BAF6C00854323 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0741819A290BAF6C00854323 /* ColorizedView.app */,
+				0741819A290BAF6C00854323 /* ColorizedViewUpgrade.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0741819C290BAF6C00854323 /* ColorizedView */ = {
+		0741819C290BAF6C00854323 /* ColorizedViewUpgrade */ = {
 			isa = PBXGroup;
 			children = (
-				0741819D290BAF6C00854323 /* AppDelegate.swift */,
-				0741819F290BAF6C00854323 /* SceneDelegate.swift */,
-				074181A1290BAF6C00854323 /* ViewController.swift */,
-				074181A3290BAF6C00854323 /* Main.storyboard */,
-				074181A6290BAF6C00854323 /* Assets.xcassets */,
-				074181A8290BAF6C00854323 /* LaunchScreen.storyboard */,
-				074181AB290BAF6C00854323 /* Info.plist */,
+				072B69EB2923F4AA00C5CF39 /* App */,
+				072B69E82923F46B00C5CF39 /* ViewControllers */,
+				072B69E92923F48B00C5CF39 /* Storyboards */,
+				072B69EA2923F49900C5CF39 /* Resources */,
 			);
-			path = ColorizedView;
+			path = ColorizedViewUpgrade;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		07418199290BAF6C00854323 /* ColorizedView */ = {
+		07418199290BAF6C00854323 /* ColorizedViewUpgrade */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 074181AE290BAF6C00854323 /* Build configuration list for PBXNativeTarget "ColorizedView" */;
+			buildConfigurationList = 074181AE290BAF6C00854323 /* Build configuration list for PBXNativeTarget "ColorizedViewUpgrade" */;
 			buildPhases = (
 				07418196290BAF6C00854323 /* Sources */,
 				07418197290BAF6C00854323 /* Frameworks */,
@@ -82,9 +117,9 @@
 			);
 			dependencies = (
 			);
-			name = ColorizedView;
+			name = ColorizedViewUpgrade;
 			productName = ColorizedView;
-			productReference = 0741819A290BAF6C00854323 /* ColorizedView.app */;
+			productReference = 0741819A290BAF6C00854323 /* ColorizedViewUpgrade.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +137,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 07418195290BAF6C00854323 /* Build configuration list for PBXProject "ColorizedView" */;
+			buildConfigurationList = 07418195290BAF6C00854323 /* Build configuration list for PBXProject "ColorizedViewUpgrade" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +150,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				07418199290BAF6C00854323 /* ColorizedView */,
+				07418199290BAF6C00854323 /* ColorizedViewUpgrade */,
 			);
 		};
 /* End PBXProject section */
@@ -138,8 +173,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				074181A2290BAF6C00854323 /* ViewController.swift in Sources */,
+				074181A2290BAF6C00854323 /* ChangeViewController.swift in Sources */,
 				0741819E290BAF6C00854323 /* AppDelegate.swift in Sources */,
+				072B69ED2923F5F600C5CF39 /* ColorizedViewController.swift in Sources */,
 				074181A0290BAF6C00854323 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,7 +324,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ColorizedView/Info.plist;
+				INFOPLIST_FILE = ColorizedViewUpgrade/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -318,7 +354,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ColorizedView/Info.plist;
+				INFOPLIST_FILE = ColorizedViewUpgrade/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -343,7 +379,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		07418195290BAF6C00854323 /* Build configuration list for PBXProject "ColorizedView" */ = {
+		07418195290BAF6C00854323 /* Build configuration list for PBXProject "ColorizedViewUpgrade" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				074181AC290BAF6C00854323 /* Debug */,
@@ -352,7 +388,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		074181AE290BAF6C00854323 /* Build configuration list for PBXNativeTarget "ColorizedView" */ = {
+		074181AE290BAF6C00854323 /* Build configuration list for PBXNativeTarget "ColorizedViewUpgrade" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				074181AF290BAF6C00854323 /* Debug */,
